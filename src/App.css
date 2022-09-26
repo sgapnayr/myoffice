@@ -494,6 +494,7 @@ button:hover {
     width: 50%;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+    object-fit: contain;
   }
 
   .CareerPoints {
