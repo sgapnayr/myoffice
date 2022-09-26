@@ -28,7 +28,7 @@ function More() {
     }
     return (
         <>
-            <div className="More" id="More" data-aos="slide-up" data-aos-duration="1000">
+            <div className="More" id="More" data-aos="fade-up" data-aos-duration="1000">
                 <div className="MoreTitle">
                     <h2>Ready for a Career With <em>My<strong>Office</strong>?</em></h2>
                 </div>
