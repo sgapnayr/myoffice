@@ -485,7 +485,9 @@ button:hover {
     width: 90%;
   }
 
-  .CareerDescription {}
+  .CareerDescription {
+    font-size: small;
+  }
 
   .CareerImage {
     height: 100%;
