@@ -1,38 +1,526 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+
+:root {
+  --color1: #ffffff;
+  --color2: #e6e0de;
+  --color3: #d0c6c2;
+  --color4: #b7a7a1;
+  --color5: #212122;
+}
+
+/* Nav */
+a {
+  color: var(--color1);
+  text-decoration: none;
+}
+
+.Nav {
+  width: 100%;
+  height: 7vh;
+  background-color: var(--color5);
+  color: var(--color2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+  transition: all ease-in-out;
+}
+
+.Logo {
+  flex: 1;
+  object-fit: cover;
+  width: 1rem;
+  transform: scale(.45);
+}
+
+.Saying {
+  flex: 1;
+  font-weight: 200;
+  font-style: italic;
+  opacity: .7;
+}
+
+.Routes {
+  flex: 1;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Route {
+  margin: .5rem;
+  transition: .2s all ease-in-out;
+  cursor: pointer;
+  padding: .5rem;
+  border-radius: 8px;
+}
+
+.Route:hover {
+  background: var(--color2);
+  color: var(--color5);
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, .2);
+}
+
+.scroll .Route {
+  background: rgba(0, 0, 0, .2);
+}
+
+.scroll .Route:hover {
+  background: rgba(0, 0, 0, .4);
+}
+
+/* Banner */
+img {
+  width: 100%;
+}
+
+.scroll {
+  background: transparent;
+  backdrop-filter: blur(18px);
+  background: rgba(0, 0, 0, .2);
+}
+
+.scroll .Logo {
+  position: fixed;
+}
+
+.Banner {
+  margin-top: 5vh;
+}
+
+.BannerImage {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  position: relative;
+  z-index: 0;
+  display: flex;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+}
+
+.BannerAbout {
+  font-size: 2rem;
+  padding: 1rem;
+  backdrop-filter: blur(18px);
+  background: rgba(0, 00, 00, .2);
+  box-shadow: 1px 1px 10px rgba(0, 00, 00, .2);
+  color: var(--color1);
+  font-style: italic;
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 25%;
+  border-radius: 10px;
+}
+
+.CompanyDescription {
+  width: 50%;
+  font-size: 1rem;
+  padding: 1rem;
+  backdrop-filter: blur(18px);
+  background: rgba(0, 00, 00, .2);
+  box-shadow: 1px 1px 10px rgba(0, 00, 00, .2);
+  color: var(--color2);
+  font-style: italic;
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 12.5%;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.CompanyDescription2 {
+  width: 50%;
+  font-size: 1rem;
+  padding: 1rem;
+  backdrop-filter: blur(18px);
+  background: rgba(0, 00, 00, .2);
+  box-shadow: 1px 1px 10px rgba(0, 00, 00, .2);
+  color: var(--color2);
+  font-style: italic;
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 40%;
+  margin: 3rem;
+  border-radius: 10px;
+}
+
+.CompanyDescription3 {
+  width: 50%;
+  font-size: 7rem;
+  padding: 1rem;
+  color: var(--color2);
+  position: absolute;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+  z-index: 1;
+  top: 50%;
+  left: 5%;
+}
+
+.Hover {
+  transition: .2s all ease-in-out;
+  cursor: pointer;
+}
+
+.Hover:hover {
+  transform: scale(1.05);
+}
+
+/* About Section */
+.About {
+  width: 60%;
+  border-top: 1px solid rgba(0, 0, 0, .2);
+  margin: 1rem;
+  text-shadow: 1px 1px 10px rgba(0, 00, 00, .2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.AboutTitle {
+  width: fit-content;
+  padding: 1rem;
+  backdrop-filter: blur(18px);
+  background: rgba(0, 00, 00, .2);
+  box-shadow: 1px 1px 10px rgba(0, 00, 00, .2);
+  color: var(--color1);
+  font-style: italic;
+  margin: 1rem;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.Awards {
+  width: 100%;
+}
+
+.Award {
+  width: 100%;
+  font-size: 3rem;
+  color: var(--color3);
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0.5rem 1rem;
+  transition: .2s all ease-in-out;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+.Award:hover {
+  background: var(--color2);
+  color: var(--color1);
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+}
+
+.Icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+}
+
+.AwardInfo {
+  font-size: 1rem;
+  ;
+}
+
+/* Careers */
+.Careers {
+  width: 100%;
+  height: 50vh;
+  background-color: var(--color5);
+  color: var(--color1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.CareerBlock {
+  width: 50%;
+  height: 80%;
+  background-color: var(--color4);
+  border-radius: 8px;
+  box-shadow: 1px 1px 14px rgba(0, 0, 0, 1);
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+.CareerBlock:hover {
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, .2);
+}
+
+.CareerPhotoBlock {
+  display: flex;
+  justify-content: start;
+  flex: 1;
+  width: 100%;
+}
+
+.CareerImage {
+  display: flex;
+  object-fit: contain;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  justify-content: start;
+  align-items: flex-start;
+  width: auto;
+}
+
+.Circle {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  margin: .25rem;
+  background-color: hsl(216, 100%, 54%);
+  border-radius: 50%;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: scale(.75);
+}
+
+.CareerDescription {
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.CareerPoints {
+  width: 30%;
+  display: flex;
+  margin: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+li {
+  list-style: upper-roman;
+  margin: 1rem;
+  font-size: large;
+}
+
+h1 {
+  color: var(--color3);
+  font-style: italic;
+}
+
+bold {
+  font-style: italic;
+  color: var(--color3);
+}
+
+/* More */
+.MorePhoto {
+  margin-bottom: -1rem;
+}
+
+.Inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  padding: 1rem;
+  backdrop-filter: blur(18px);
+  background: rgba(0, 00, 00, .2);
+  box-shadow: 1px 1px 10px rgba(0, 00, 00, .2);
+  color: var(--color1);
+  font-style: italic;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  position: absolute;
+}
+
+input {
+  background: rgba(0, 0, 0, .55);
+  width: 100%;
+  margin: .5rem;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+  border: 1px solid rgba(0, 0, 0, .2);
+  outline: none;
+  font-size: 1rem;
+  color: var(--color1);
+}
+
+.MoreTitle {
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 10%;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, .6);
+}
+
+Strong {
+  color: var(--color3)
+}
+
+.MoreButton {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 75%
+}
+
+button {
+  padding: 1rem 7rem;
+  backdrop-filter: blur(10px);
+  background: transparent;
+  color: var(--color1);
+  border-radius: 50px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .7);
+  cursor: pointer;
+  transition: .2s all ease-in-out;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, .2);
+  color: var(--color3);
+  transform: scale(1.05);
+}
+
+.Contact {
+  display: none;
+}
+
+/* Media Query */
+@media only screen and (max-width: 768px) {
+
+  /* Nav */
+  .Nav {
+    width: 100vw;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Saying {
+    font-size: .5rem;
+  }
+
+  .Route {
+    font-size: small;
+  }
+
+  /* Banner */
+  .BannerAbout {
+    font-size: small;
+    margin-top: .5rem;
+  }
+
+  .CompanyDescription,
+  .CompanyDescription2 {
+    font-size: small;
+  }
+
+  .CompanyDescription {
+    left: 0%;
+    top: 30%;
+    width: 60%;
+  }
+
+  .CompanyDescription2 {
+    display: none;
+  }
+
+  .CompanyDescription3 {
+    font-size: 5rem;
+    top: 45%;
+    left: 55%
+  }
+
+  /* Awards */
+  .Awards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .Award {
+    width: 100%;
+  }
+
+  .AwardInfo {
+    font-size: small;
+    margin: 1rem .5rem;
+    width: 100%;
+  }
+
+  /* Careers */
+  .Careers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .CareerBlock {
+    width: 90%;
+  }
+
+  .CareerPoints {
+    display: none;
+  }
+
+  /* More */
+  .More {
+    font-size: small;
+    height: 30vh;
+  }
+
+  .Inputs {
+    display: none;
+  }
+
+  .MoreButton {
+    display: none;
+  }
+
+  .Contact {
+    display: inline;
+    position: absolute;
+    color: white;
+    align-self: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
+    top: 50%;
+    background: rgba(0, 0, 0, .2);
+    padding: 1rem;
+    backdrop-filter: blur(18px);
   }
 }
