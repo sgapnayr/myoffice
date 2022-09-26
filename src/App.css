@@ -481,13 +481,6 @@ button:hover {
   }
 
   /* Careers */
-  .Careers {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
   .CareerBlock {
     width: 90%;
   }
