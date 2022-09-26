@@ -488,14 +488,11 @@ button:hover {
   .CareerDescription {}
 
   .CareerImage {
-    position: absolute;
-    width: 60%;
     height: 100%;
-    border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
     object-fit: contain;
     left: 0%;
-    margin-left: -1rem;
   }
 
   .CareerPoints {
