@@ -481,6 +481,18 @@ button:hover {
   }
 
   /* Careers */
+  .CareerBlock {
+    position: relative;
+  }
+
+  .CareerImage {
+    position: relative;
+  }
+
+  .CareerDescription {
+    font-size: smaller;
+  }
+
   .CareerPoints {
     display: none;
   }
