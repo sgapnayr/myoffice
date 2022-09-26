@@ -482,12 +482,10 @@ button:hover {
 
   /* Careers */
   .CareerBlock {
-    position: relative;
+    width: 90%;
   }
 
-  .CareerImage {
-    position: relative;
-  }
+  .CareerPhotoBlock {}
 
   .CareerDescription {
     font-size: smaller;
