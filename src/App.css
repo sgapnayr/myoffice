@@ -485,8 +485,6 @@ button:hover {
     width: 90%;
   }
 
-  .CareerPhotoBlock {}
-
   .CareerDescription {
     font-size: smaller;
   }
@@ -494,6 +492,8 @@ button:hover {
   .CareerImage {
     position: absolute;
     width: 4rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
   }
 
   .CareerPoints {
