@@ -491,6 +491,10 @@ button:hover {
     font-size: smaller;
   }
 
+  .CareerImage {
+    position: absolute;
+  }
+
   .CareerPoints {
     display: none;
   }
