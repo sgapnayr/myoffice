@@ -8,6 +8,7 @@ function Career() {
                 <div className="CareerBlock" data-aos="slide-up" data-aos-duration="900">
                     <div className="CareerPhotoBlock">
                         <img src={CareerPhoto} alt="" className='CareerImage' />
+                        <img src={CareerPhoto} alt="" className='CareerImage2' />
                         <div className="Circle">&#10003;</div>
                         <div className="CareerDescription">
                             <h1>With Record breaking company culture...</h1>

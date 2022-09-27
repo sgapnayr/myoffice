@@ -279,11 +279,14 @@ img {
 .CareerPhotoBlock {
   display: flex;
   justify-content: start;
-  flex: 1;
   width: 100%;
 }
 
 .CareerImage {
+  display: none;
+}
+
+.CareerImage2 {
   display: flex;
   object-fit: contain;
   border-top-left-radius: 8px;
@@ -314,8 +317,11 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  margin: 1rem;
+  position: absolute;
+  width: 50%;
+  right: 0%;
+  top: 35%;
+  padding: 0 1rem;
 }
 
 .CareerPoints {
@@ -490,11 +496,16 @@ button:hover {
   }
 
   .CareerImage {
-    height: 100%;
+    width: 100%;
     border-bottom-left-radius: 8px;
     border-top-left-radius: 8px;
-    object-fit: contain;
+    object-fit: cover;
     left: 0%;
+    display: flex;
+  }
+
+  .CareerImage2 {
+    display: none;
   }
 
   .CareerPoints {
