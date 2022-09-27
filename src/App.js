@@ -32,7 +32,7 @@ function App() {
         <div className="Nav" id='nav'>
           <img src={Logo} className="Logo" alt="" />
           <div className="Routes" id='menu'>
-            <a href="Home" className='Route'>Home</a>
+            <a href="#" className='Route'>Home</a>
             <a href="Career" className='Route'>About</a>
             <a href="More" className='Route'>Careers</a>
           </div>

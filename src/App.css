@@ -78,7 +78,7 @@ a {
 
 .Route:hover {
   background: var(--color2);
-  color: var(--color5);
+  color: var(--color4);
   box-shadow: 1px 1px 10px rgba(255, 255, 255, .2);
 }
 
@@ -98,7 +98,7 @@ img {
 .scroll {
   background: transparent;
   backdrop-filter: blur(18px);
-  background: rgba(0, 0, 0, .2);
+  background: rgba(0, 0, 0, .7);
 }
 
 .scroll .Logo {
@@ -106,7 +106,7 @@ img {
 }
 
 .Banner {
-  margin-top: 5vh;
+  margin-top: 6vh;
 }
 
 .BannerImage {
@@ -189,9 +189,9 @@ img {
 
 /* About Section */
 .About {
-  width: 60%;
+  width: 75%;
   border-top: 1px solid rgba(0, 0, 0, .2);
-  margin: 1rem;
+  margin: 2rem;
   text-shadow: 1px 1px 10px rgba(0, 00, 00, .2);
   display: flex;
   justify-content: center;
@@ -223,7 +223,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0.5rem 1rem;
+  margin: 1rem 0;
   transition: .2s all ease-in-out;
   cursor: pointer;
   padding: 0 1rem;
@@ -368,6 +368,7 @@ bold {
   left: 25%;
   width: 50%;
   position: absolute;
+  border-radius: 8px;
 }
 
 input {
