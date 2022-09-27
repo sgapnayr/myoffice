@@ -69,6 +69,7 @@ a {
 }
 
 .Route {
+  width: 7rem;
   margin: .5rem;
   transition: .2s all ease-in-out;
   cursor: pointer;
