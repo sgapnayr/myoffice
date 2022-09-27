@@ -13,6 +13,9 @@ function Career() {
                         <div className="CareerDescription">
                             <h1>With Record breaking company culture...</h1>
                         </div>
+                        <div className="CareerDescription2">
+                            <h1>With Record breaking company culture...</h1>
+                        </div>
                     </div>
                     <div className="CareerPhotoBlock">
                     </div>

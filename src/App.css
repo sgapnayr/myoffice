@@ -312,15 +312,16 @@ img {
 }
 
 .CareerDescription {
+  display: none;
+}
+
+.CareerDescription2 {
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: absolute;
-  width: 50%;
   right: 0%;
-  top: 35%;
   padding: 0 1rem;
 }
 
@@ -492,7 +493,20 @@ button:hover {
   }
 
   .CareerDescription {
-    font-size: small;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 50%;
+    right: 0%;
+    top: 30%;
+    padding: 0 1rem
+  }
+
+  .CareerDescription2 {
+    display: none;
   }
 
   .CareerImage {
