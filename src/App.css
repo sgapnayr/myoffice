@@ -494,20 +494,27 @@ button:hover {
   }
 
   .CareerDescription {
-    color: red;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: absolute;
     width: 50%;
+    height: 100%;
     right: 0%;
     top: 0%;
-    padding: 5rem
   }
 
   .CareerDescription2 {
     display: none;
+  }
+
+  .CareerPhotoBlock {
+    width: 50%;
+    height: 100%;
+    right: 0%;
+    top: 0%;
   }
 
   .CareerImage {
