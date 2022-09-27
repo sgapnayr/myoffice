@@ -6,18 +6,15 @@ function Career() {
         <>
             <div className="Careers" name="Career" data-aos="flip-up" data-aos-duration="1200">
                 <div className="CareerBlock" data-aos="slide-up" data-aos-duration="900">
-                    <div className="CareerPhotoBlock">
-                        <img src={CareerPhoto} alt="" className='CareerImage' />
-                        <img src={CareerPhoto} alt="" className='CareerImage2' />
-                        <div className="Circle">&#10003;</div>
-                        <div className="CareerDescription">
-                            <h1>With Record breaking company culture...</h1>
-                        </div>
-                        <div className="CareerDescription2">
-                            <h1>With Record breaking company culture...</h1>
-                        </div>
+
+                    <img src={CareerPhoto} alt="" className='CareerImage' />
+                    <img src={CareerPhoto} alt="" className='CareerImage2' />
+                    <div className="Circle">&#10003;</div>
+                    <div className="CareerDescription">
+                        <h1>With Record breaking company culture...</h1>
                     </div>
-                    <div className="CareerPhotoBlock">
+                    <div className="CareerDescription2">
+                        <h1>With Record breaking company culture...</h1>
                     </div>
                 </div>
                 <div className="CareerPoints" data-aos="fade-left" data-aos-duration="1800">

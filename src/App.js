@@ -6,10 +6,11 @@ import Banner from './components/Banner/Banner';
 import Career from './components/Career/Career';
 import Logo from './assets/logo/logo.png'
 import More from './components/More/More';
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 function App() {
+  const ref = useRef(null);
   var navbar = document.getElementById('nav')
   var menu = document.getElementById('menu')
 
@@ -22,6 +23,10 @@ function App() {
     }
   }
 
+  const handleClick = () => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   useEffect(() => {
     AOS.init()
   }, [])
@@ -32,9 +37,9 @@ function App() {
         <div className="Nav" id='nav'>
           <img src={Logo} className="Logo" alt="" />
           <div className="Routes" id='menu'>
-            <a href="#" className='Route'>Home</a>
-            <a href="Career" className='Route'>About</a>
-            <a href="More" className='Route'>Careers</a>
+            <button className='Route'>Home</button>
+            <button className='Route'>About</button>
+            <button className='Route'>Careers</button>
           </div>
           <p className="Saying">"Not just an office, we're honest"</p>
         </div>
